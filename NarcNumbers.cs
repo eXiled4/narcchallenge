@@ -1,4 +1,4 @@
-1public class Challenge
+public class Challenge
 {
   public static bool NarcNumbers(int value)
   {

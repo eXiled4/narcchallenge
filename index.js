@@ -1,6 +1,7 @@
 
 function narc(num) {
-    var arr = Array.from(num.toString()).map(Number)
+    let arr = Array.from(num.toString()).map(Number)
+    // console.log((arr.map((a) => (a ** arr.length))).reduce((a, b) => a + b, 0))
     return (arr.map((a) => (a ** arr.length))).reduce((a, b) => a + b, 0) === num ? true : false;
 }
 
@@ -24,6 +25,7 @@ function prac() {
 // arr.reduce((a, b) => a + b)
 // above sum all elements in array javascript
 // return Math.pow(n, arr.length) === n ? true : false
+//narc(35641594208964132) - highest number that my function will recognise as a narc!
 
 
 
