@@ -1,7 +1,7 @@
 
 function narc(num) {
     let arr = Array.from(num.toString()).map(Number)
-    // console.log((arr.map((a) => (a ** arr.length))).reduce((a, b) => a + b, 0))
+    console.log((arr.map((a) => (a ** arr.length))).reduce((a, b) => a + b, 0))
     return (arr.map((a) => (a ** arr.length))).reduce((a, b) => a + b, 0) === num ? true : false;
 }
 
