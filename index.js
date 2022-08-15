@@ -1,7 +1,12 @@
 
 function narc(num) {
     let arr = Array.from(num.toString()).map(Number)
-    console.log((arr.map((a) => (a ** arr.length))).reduce((a, b) => a + b, 0))
+    let toNum = Array.from(String(num), Number);
+    let arrNum = num.toString().split("");
+    console.log(arrNum);
+    console.log(toNum);
+    console.log(arr);
+    console.log((arr.map((a) => (a ** arr.length))).reduce((a, b) => a + b, 0));
     return (arr.map((a) => (a ** arr.length))).reduce((a, b) => a + b, 0) === num ? true : false;
 }
 
@@ -26,6 +31,8 @@ function prac() {
 // above sum all elements in array javascript
 // return Math.pow(n, arr.length) === n ? true : false
 //narc(35641594208964132) - highest number that my function will recognise as a narc!
+// narc(35875699062250035) and above wont work!! problems lies with the map method!!! - 35875699062250035 returns as  3, 5, 8, 7, 5, 6, 9, 9, 0, 6, 2, 2, 5, 0, 0, 3, 6 ]
+// Last number returns 1 higher than above - noted tried one below (35875699062250034) and returned a different last digit too!!!
 
 
 
