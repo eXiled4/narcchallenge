@@ -7,7 +7,7 @@ function narc(num) {
     console.log(toNum);
     console.log(arr);
     console.log((arr.map((a) => (a ** arr.length))).reduce((a, b) => a + b, 0));
-    return (arr.map((a) => (a ** arr.length))).reduce((a, b) => a + b, 0) === num ? true : false;
+    return (toNum.map((a) => (a ** toNum.length))).reduce((a, b) => a + b, 0) === num ? true : false;
 }
 
 function prac() {
